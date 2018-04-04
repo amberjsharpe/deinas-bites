@@ -7,6 +7,7 @@ $font-family-sans: 'NunitoSans-ExtraLight', sans-serif;
 $color-black: #191919;
 $color-green: #c0e8dd;
 $color-pink: #FCF2F7;
+$color-rose: #f6d9ea;
 $color-dark-purple: #d29fbb;
 $color-light-purple: #d2d5ea;
 $color-light-gray: #F3F3F5;
@@ -36,6 +37,10 @@ p {
 html, 
 body {
     height: 100%;
+}
+
+.active {
+    color: $color-dark-purple;
 }
 
 // Header //
@@ -122,6 +127,7 @@ body {
         width: 100%;
         z-index: 1;
     }
+   
 }
 
 #light-grey-container {
@@ -129,10 +135,22 @@ body {
     height: 300px;
 }
 
+.light-grey-container-div {
+    position: relative;
+}
+
+#light-grey-container-div {
+    position: relative;
+    z-index: 1;
+}
+
 #more-bites-display {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-top: 35px;
+    padding-left: 115px;
+    z-index: 2;
 }
 
 .more-bites-img {
