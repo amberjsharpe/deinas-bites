@@ -33,6 +33,15 @@ p {
     font-family: $font-family-serif;
 }
 
+a {
+    color: $color-black;
+}
+
+a:hover {
+    color: $color-black;
+    text-decoration: none;
+}
+
 // HTML & Body //
 html, 
 body {
