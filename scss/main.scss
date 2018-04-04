@@ -1,7 +1,7 @@
 
 // Fonts //
-$font-family-headers: 'PT Serif';
-$font-family-paragraph: 'Nunito';
+$font-family-serif: 'PT Serif';
+$font-family-sans: 'NunitoSans-ExtraLight', sans-serif;
 
 // Colors //
 $color-black: #191919;
@@ -10,3 +10,51 @@ $color-pink: #f6d9ea;
 $color-dark-purple: #d29fbb;
 $color-light-purple: #d2d5ea;
 $color-light-gray: #F3F3F5;
+
+// Font Sizes //
+h1 {
+    font-family: $font-family-serif;
+}
+
+h2 {
+    font-size: 13px;
+    font-family: $font-family-sans;
+}
+
+// Header //
+#nav-bar-display {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-bar {
+    display: flex;
+    padding-left: 195px;
+}
+
+.nav-bar-item {
+    padding: 15px;
+}
+
+#social-media {
+    display: flex;
+    padding-right: 200px;
+}
+
+.social-media-item {
+    padding: 15px;
+}
+
+#shopping-bag {
+    height: 32px;
+    width: 32px;
+    padding: 15px;
+}
+
+// Footer //
+#footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+
