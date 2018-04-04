@@ -176,7 +176,14 @@ body {
 }
 
 // ** Store ** //
+#store-display {
+    background-color: $color-light-gray;
+}
 
+.best-seller-img {
+    width: 280px;
+    height: 280px;
+}
 
 // Footer //
 #footer {
