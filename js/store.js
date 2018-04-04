@@ -15,16 +15,17 @@ let cookieStoreArray = [
     "images/seeds.jpg"
 ];
 
+
+
 let displayStoreArray = () => {
-    for (var i = 0; i < booksArray.length; i++) {
+    for (var i = 0; i < cookieStoreArray.length; i++) {
         var cookieCard = `
         <div class="cookieCard">
-            <img class="best-seller-img" src="best-seller-images/white_choc.png">
+            <img class="best-seller-img" src="${cookieStoreArray[i]}">
             <h3>WHITE CHOCOLATE BITES</h3>
             <p>$1.00</p>
         </div>
-        `
+        `;
         document.querySelector('#store-display').innerHTML += cookieCard;
     }
 };
-}
