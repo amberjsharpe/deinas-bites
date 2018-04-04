@@ -13,9 +13,9 @@
     <header>
         <nav id="nav-bar-display">
             <div id="nav-bar">
-                <h3 class="nav-bar-item">HOME</h3>
-                <h3 class="nav-bar-item">SHOP</h3>
-                <h3 class="nav-bar-item">ABOUT ME</h3>
+                <a href="index.html"><h3 class="nav-bar-item active">HOME</h3></a>
+                <a href="store.html"><h3 class="nav-bar-item">SHOP</h3></a>
+                <a href="aboutme.html"><h3 class="nav-bar-item">ABOUT ME</h3></a>
             </div>    
             <h1 class="nav-bar-company-name">Deina's Bites</h1>
             <div id="social-media">
@@ -27,6 +27,8 @@
             </div>    
         </nav>
     </header>
+    
+    <main>
         <div class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
@@ -44,42 +46,81 @@
         <div class="best-sellers-header">
             <h2>/ BEST SELLERS</h2>
             <p>I'm a paragraph</p>
-        </div id="best-sellers-display">
-        <div>
-            <img>
-            <img>
-            <img>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div id="best-white-choc">
+                        <img class="best-seller-img" src="best-seller-images/white_choc.png">
+                        <h3>WHITE CHOCOLATE BITES</h3>
+                        <p>$1.00</p>
+                    </div>
+                    <div>
+                        <img id="best-oatmeal" class="best-seller-img" src="best-seller-images/oatmeal_bites.png">
+                        <h3>OATMEAL BITES</h3>
+                        <p>$2.00</p>
+                    </div>
+                    <div>
+                        <img id="best-jam-poppy" class="best-seller-img" src="best-seller-images/jam_poppy.png">
+                        <h3>JAM &amp; POPPY SEED BITES</h3>
+                        <p>$1.00</p>
+                    </div>      
+                </div>
+            
+            <div class="all-cookies">
+                <div class="all-cookies-component">
+                    <hr>
+                    <button type="button" id="all-cookies" class="btn btn-outline-dark">All Cookies</button>
+                </div>
+            </div>
         </div>
 
+        <div>
+            <div id="light-grey-container-div" class="container pr-0 pl-0 pb-5 w-100">
+                <div id="light-grey-container">
+                    <h2 class="pt-5">/ FOLLOW ME FOR MORE BITES</h2>
+                    <div id="more-bites-display" class="container">
+                        <div><img class="more-bites-img" src="more-bites-images/bowls.jpg" alt="bowls"></div>
+                        <div><img class="more-bites-img" src="more-bites-images/spoon.jpg" alt="spoon"></div>
+                        <div><img class="more-bites-img" src="more-bites-images/oranges.jpg" alt="oranges"></div>
+                        <div><img class="more-bites-img" src="more-bites-images/choc_cookies.jpg" alt="chocolate cookies"></div>
+                        <div><img class="more-bites-img" src="more-bites-images/ingredients.jpg" alt="ingredients"></div>
+                        <div><img class="more-bites-img" src="more-bites-images/crackers.jpg" alt="crackers"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="filler-div">
 
-        <footer id="footer" class="container">
-            <div class="footer-column">
-                <h3>SHOP:</h3>
-                <p>About</p>
-                <p>FAQ</p>
-                <p>Shipping/Pick Up</p>
-                <p>Store Policy</p>
-                <p>Contact Me</p>
-            </div>
-            <div class="footer-column">
-                <h3>OPENING HOURS:</h3>
-                <p>Mon - Fri: 7am - 10pm</p>
-                <p>Saturday: 8am - 10pm</p>
-                <p>Sunday: 8am - 11pm</p>
-            </div>
-            <div class="footer-column">
-                <h3>ADDRESS:</h3>
-                <p>500 Terry Francois Street</p>
-                <p>San Francisco, CA 94158</p>
-                <p>Tel: 123-456-7890</p>
-            </div>
-            <div class="footer-column">
-                <img class="social-media-icon" src="images/fcbk.png" alt="facebook">
-                <img class="social-media-icon" src="images/instagram.png" alt="instagram">
-                <img class="social-media-icon" src="images/youtube.png" alt="youtube">
-            </div>     
-        </footer>
-
+        </div>
+    </main>    
+<footer id="footer" class="container">
+    <div class="footer-column">
+        <h3>SHOP:</h3>
+        <p>About</p>
+        <p>FAQ</p>
+        <p>Shipping/Pick Up</p>
+        <p>Store Policy</p>
+        <p>Contact Me</p>
+    </div>
+    <div class="footer-column">
+        <h3>OPENING HOURS:</h3>
+        <p>Mon - Fri: 7am - 10pm</p>
+        <p>Saturday: 8am - 10pm</p>
+        <p>Sunday: 8am - 11pm</p>
+    </div>
+    <div class="footer-column">
+        <h3>ADDRESS:</h3>
+        <p>500 Terry Francois Street</p>
+        <p>San Francisco, CA 94158</p>
+        <p>Tel: 123-456-7890</p>
+    </div>
+    <div class="footer-column">
+        <img class="social-media-icon" src="images/fcbk.png" alt="facebook">
+        <img class="social-media-icon" src="images/instagram.png" alt="instagram">
+        <img class="social-media-icon" src="images/youtube.png" alt="youtube">
+        <p>&copy; 2023 by Deina's Bites.</p> 
+    </div> 
+</footer>
+                
 <script src="./dist/app.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

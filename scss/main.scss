@@ -7,6 +7,7 @@ $font-family-sans: 'NunitoSans-ExtraLight', sans-serif;
 $color-black: #191919;
 $color-green: #c0e8dd;
 $color-pink: #FCF2F7;
+$color-rose: #f6d9ea;
 $color-dark-purple: #d29fbb;
 $color-light-purple: #d2d5ea;
 $color-light-gray: #F3F3F5;
@@ -32,10 +33,23 @@ p {
     font-family: $font-family-serif;
 }
 
+a {
+    color: $color-black;
+}
+
+a:hover {
+    color: $color-black;
+    text-decoration: none;
+}
+
 // HTML & Body //
 html, 
 body {
     height: 100%;
+}
+
+.active {
+    color: $color-dark-purple;
 }
 
 // Header //
@@ -84,6 +98,79 @@ body {
 .best-sellers-header {
     text-align: center;
     padding-top: 85px;
+}
+
+.best-seller-img {
+    width: 285px;
+    height: 285px;
+    padding: 15px;
+}
+
+// All Cookies Button
+
+.all-cookies {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.all-cookies-component {
+    height: 20px;
+    position: relative;
+    button {
+        background: white;
+        position: relative;
+        z-index: 2;
+        border-radius: 0 !important;
+        text-transform: uppercase;
+        &:hover{
+            background: white !important;
+            color: black !important;
+        }
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 1px;
+        width: 100%;
+        z-index: 1;
+    }
+   
+}
+
+#light-grey-container {
+    background-color: $color-light-gray;
+    height: 300px;
+}
+
+.light-grey-container-div {
+    position: relative;
+}
+
+#light-grey-container-div {
+    position: relative;
+    z-index: 1;
+}
+
+#more-bites-display {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 35px;
+    padding-left: 115px;
+    z-index: 2;
+}
+
+.more-bites-img {
+    height: 325px;
+    width: 300px;
+    padding: 5px;
+}
+
+#filler-div {
+    background-color: white;
+    height: 485px;
 }
 
 // Footer //
