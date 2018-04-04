@@ -124,7 +124,22 @@ body {
     }
 }
 
-// Hover Best Seller Image
+#light-grey-container {
+    background-color: $color-light-gray;
+    height: 300px;
+}
+
+#more-bites-display {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.more-bites-img {
+    height: 325px;
+    width: 300px;
+    padding: 5px;
+}
 
 // Footer //
 #footer {
