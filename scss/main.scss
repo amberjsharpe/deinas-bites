@@ -54,6 +54,10 @@ a:hover {
     text-decoration: none;
 }
 
+.background-color {
+    background-color: $color-light-gray;
+}
+
 // HTML & Body //
 html, 
 body {
@@ -269,6 +273,12 @@ body {
 // ** Store ** //
 #store-display {
     background-color: $color-light-gray;
+}
+
+.cookie-card-img {
+    width: 280px;
+    height: 280px;
+    margin: 5px;    
 }
 
 // ** About Me ** //

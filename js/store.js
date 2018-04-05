@@ -21,7 +21,7 @@ let displayCookieStoreArray = (cookieStoreArray) => {
     for (var i = 0; i < cookieStoreArray.length; i++) {
         var cookieCard = `
         <div class="cookieCard d-flex justify-content-center align-items-center flex-column">
-            <img class="best-seller-img" src="${cookieStoreArray[i].img}">
+            <img class="cookie-card-img" src="${cookieStoreArray[i].img}">
             <h3>${cookieStoreArray[i].title}</h3>
             <p>${cookieStoreArray[i].price}</p>
         </div>
@@ -29,7 +29,6 @@ let displayCookieStoreArray = (cookieStoreArray) => {
         document.querySelector('#store-display').innerHTML += cookieCard;
     }
 };
-
 displayCookieStoreArray(cookieStoreArray);
 
 
